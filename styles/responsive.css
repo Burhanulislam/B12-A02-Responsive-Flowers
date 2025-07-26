@@ -9,7 +9,7 @@
 
 /* Shared Styles */
 * {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .common-width {
@@ -17,6 +17,10 @@
     margin: 0 auto;
 }
 
+.img-width{
+    width: 100%;
+    border-radius: 10px;
+}
 .text-orange {
     color: #E95A08;
 }
@@ -87,4 +91,106 @@ nav {
     height: 185px;
     background-color: none;
     border-radius: 50%;
+}
+
+/*  Latest Deal Section */
+.deal-content{
+    
+}
+.deal-img-container{
+    display: grid;
+    grid-template-columns: 370px 750px;
+    gap: 2rem;
+}
+.deal-img-1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+.deal-img-2{
+    position: relative;
+}
+.discount-1{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.discount-2{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.discount-3{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: green;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: none;
+}
+/* Join & Subscribe Section */
+.join-sect{
+    background-image: url(/assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 533px;
+    background-size: cover;
+}
+
+.join-container{
+    width: 1140px;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+}
+.join-container form{
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+.join-heading{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-top: 14rem;
+    display: block;
+    text-align: center;
+}
+.join-input{
+    background-color: aliceblue;
+    padding: 1rem 18rem 1rem 1rem;
+
+}
+.join-btn{
+    background-color: #E95A08;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 3rem;
+}
+
+/* Footer Section */
+footer{
+    display: grid;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.footer-sect{
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 5rem 1rem;
+}
+.foot-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.foot-img-contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: flex-start;
 }
