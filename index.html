@@ -14,25 +14,30 @@
         rel="stylesheet">
     <!-- tailwind css link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/2755cc5690.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="theme-color">
     <header class="common-width ">
         <nav>
             <div>
-                <img src="assets/logo.png" alt="">
+                <img class="nav-logo" src="assets/logo.png" alt="">
             </div>
             <div class="nav-items">
-                <a href="">Home</a>
-                <a href="">Shop</a>
-                <a href="">About Us</a>
-                <a href="">Cart ($56)</a>
+                <a class="hide-items" href="">Home</a>
+                <a class="hide-items" href="">Shop</a>
+                <a class="hide-items" href="">About Us</a>
+                <a id="icon-item" href="">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    Cart ($56)</a>
             </div>
         </nav>
         <!-- banner -->
         <div class="banner">
             <div class="banner-content">
-                <h1 class="font-noto text-6xl font-extrabold"> ALWAYS <span class="text-orange">FRESH FLOWERS</span>
+                <h1 class="font-noto text-6xl font-extrabold banner-heading"> ALWAYS <span class="text-orange">FRESH
+                        FLOWERS</span>
                 </h1>
                 <p class="align-bottom text-gray mt-10">Indulge your senses with the beauty and fragrance of our fresh
                     flower shop. From
@@ -47,9 +52,9 @@
 
     <main class="">
         <!-- Our Plants Section -->
-        <section class="common-width">
-            <div class="plant-content lg:text-center lg:px-70">
-                <h2 class="lg:text-4xl font-bold mb-4"><span class="text-orange">Our</span> Plants</h2>
+        <section class="common-width small-width ">
+            <div class="plant-content text-center lg:px-70">
+                <h2 class="lg:text-4xl font-bold mb-4 our-plants"><span class="text-orange">Our</span> Plants</h2>
                 <p class="text-gray mb-4">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh.
@@ -59,49 +64,49 @@
             <div class="plant-card">
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
                 <div class="card">
                     <img class="mb-3 mt-10" src="assets/sample-flower-image.png" alt="">
-                    <p class="text-center">Lily Blossom</p>
+                    <p class="text-center lily-small">Lily Blossom</p>
                     <h4 class="text-center font-bold ">20USD</h4>
                     <button class="btn-card">ADD TO CART</button>
                 </div>
@@ -110,12 +115,12 @@
         </section>
 
         <!-- Flowers & Plant Lover Section -->
-        <section class="plant-lover common-width">
+        <section class="plant-lover common-width small-width ">
             <div>
                 <img src="assets/flower-store.png" alt="coming-soon">
             </div>
             <div class="">
-                <h2 class="lg:text-4xl font-bold pr-60">Flower & Plants Lover</h2>
+                <h2 class="lg:text-4xl font-bold lg:pr-60 lover-heading">Flower & Plants Lover</h2>
                 <ul>
                     <li class="text-gray mt-10 pl-10">
                         Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
@@ -135,43 +140,49 @@
         </section>
 
         <!-- Latest Deal Section -->
-        <section class="common-width deal-sect">
-            <div class="deal-content lg:text-center">
-                <h2 class="lg:text-4xl font-bold mb-4"> <span class="text-orange">Latest</span> Deals</h2>
-                <p class="text-gray px-70 mb-20">
-                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
-                    exotic blooms, we offer a wide variety of fresh.
-                </p>
+        <section class="common-width deal-sect small-width ">
+            <div class="deal-content  text-center">
+                <div class="">
+                    <h2 class="font-bold mb-4 deal-heading"> <span class="text-orange ">Latest</span> Deals</h2>
+                    <p class="text-gray lg:px-70 mb-20">
+                        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to
+                        exotic blooms, we offer a wide variety of fresh.
+                    </p>
+                </div>
             </div>
 
             <div class="deal-img-container">
                 <div class="deal-img-1 ">
-                    <div class="deal-box-1">
-                        <img class="img-width" src="assets/deal-bloom.png" alt="coming-soon">
-                        <h3 class="discount-1">60% Off | Zabo Plant 
-                            <span class="shop-now">Shop Now</span></h3>
+                    <div class="deal-box-1 bloom-img">
+                        <!-- <img class="img-width hidden" src="assets/deal-bloom.png" alt="coming-soon"> -->
+                        <h3 class="discount-1">60% Off | Zabo Plant
+                            <span class="shop-now">Shop Now</span>
+                        </h3>
                     </div>
-                    <div class="deal-box-2">
-                        <img class="img-width" src="assets/deal-ana.png" alt="coming-soon">
-                        <h3 class="discount-2">30% Off | Zabo Plant 
-                            <span class="shop-now">Shop Now</span></h3>
+                    <div class="deal-box-2 ana-img">
+                        <!-- <img class="img-width hidden" src="assets/deal-ana.png" alt="coming-soon"> -->
+                        <h3 class="discount-2">30% Off | Zabo Plant
+                            <span class="shop-now">Shop Now</span>
+                        </h3>
                     </div>
                 </div>
 
-                <div class="deal-img-2">
-                    <img class="img-width zabo-img" src="assets/deal-zabo.png" alt="coming-soon">
+                <div class="deal-img-2 zabo-img">
+                    <img class="img-width hidden" src="assets/deal-zabo.png" alt="coming-soon">
                     <h3 class="discount-3">25% Off | Zabo Plant <span class="shop-now-lrg">Shop Now</span></h3>
                 </div>
             </div>
         </section>
 
         <!--JOin & Subscribe Section -->
-        <section>
+        <section class="">
             <div class="join-sect">
-                <div class="join-container common-width join-content">
+                <div class="join-container lg:common-width join-content">
                     <h2 class="join-heading text-4xl ">Join the colorful Bunch</h2>
                     <form action="">
-                        <input class="join-input" type="email" placeholder="Write-email" name="" id=""><button class="join-btn" type="submit" value="Subscribe">Subscribe</button>
+                        <input class="join-input" type="email" placeholder="Write-email" name="" id=""><button
+                            class="join-btn" type="submit" value="Subscribe">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -219,6 +230,7 @@
             </div>
         </section>
     </footer>
+    <!-- Done all -->
 </body>
 
 </html>
