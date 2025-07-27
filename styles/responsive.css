@@ -201,8 +201,10 @@ nav {
 }
 
 /* Join & Subscribe Section */
-.join-sect {
+.join-background{
     background-color: none;
+}
+.join-sect {
     background-image: url(/assets/news-letter-bg.png);
     background-repeat: no-repeat;
     width: 100%;
@@ -426,8 +428,10 @@ footer {
     }
 
     /* Join & Subscribe Section */
-    .join-sect {
+    .join-background{
         background-color: none;
+    }
+    .join-sect {
         background-image: url(/assets/news-letter-bg.png);
         background-repeat: no-repeat;
         width: 100%;
